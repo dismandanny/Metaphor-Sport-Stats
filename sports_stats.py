@@ -66,6 +66,7 @@ if request.status_code == 200:
     # Print the list of the top 5 in the given stat
     # The columns may vary per website retrieved, however, the player name and their ranking
     # in the stat will be placed in order from 1-5
+    print("\nHere are the top 5 players in history in this stat:")
     for person in top_five_players:
         print(str(count) + f": {person['Rank']}, {person['Player']}, {person[user_stat]}")    
         count += 1  
